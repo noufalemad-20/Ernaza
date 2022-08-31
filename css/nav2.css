@@ -1,0 +1,21 @@
+.dropdown-mega .dropdown-menu {
+    width: 100%;
+}
+
+.dropdown-mega h5 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    margin: 0;
+}
+
+.list-group-item {
+    font-size: 16px;
+    color: #3F3B51;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding: 12px 0;
+}
+
+.list-group-item:hover {
+    color: #008489;
+}
