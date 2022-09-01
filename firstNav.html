@@ -4,9 +4,7 @@
         <div class="container">
             <ul class="header-links float-start">
                 <li><a href="#"><i class="fa-regular fa-circle-question"></i>Help/FAQ</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i>Call us</a></li>
-            </ul>
-            <ul class="header-links float-end">
+                <!-- <li><a href="#"><i class="fa-solid fa-envelope"></i>Call us</a></li> -->
                 <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
                 <li><a href="#"><i class="fa-solid fa-globe"></i> EN</a></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i> My Account</a></li>
@@ -15,7 +13,6 @@
     </div>
     <!-- MAIN HEADER -->
     <div id="header">
-        <!-- container -->
         <div class="container">
             <div class="row">
                 <!-- LOGO -->
@@ -27,7 +24,7 @@
                     </div>
                 </div>
                 <!-- SEARCH BAR -->
-                <div class="col-md-6">
+                <div class="col-md-6 d-none d-lg-block">
                     <div class="container-fluid">
                         <form class="d-flex" role="search">
                             <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
@@ -36,58 +33,28 @@
                     </div>
                 </div>
                 <!-- ACCOUNT -->
-                <div class="col-md-3 clearfix">
+                <div class="col-md-3 clearfix d-none d-lg-block">
                     <div class="header-ctn">
-                        <!-- Wishlist -->
+                        <!-- POST AN ADD  -->
                         <div>
                             <a href="#">
                                 <i class="fa-solid fa-plus"></i>
-                                <span>Post free add</span>
-                                <!-- <div class="qty">2</div> -->
+                                <span>Post a free add</span>
                             </a>
                         </div>
-                        <!-- /Wishlist -->
-                        <!-- Cart -->
+                        <!-- LOCATION -->
                         <div class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                                 <span>Location</span>
                                 <!-- <div class="qty">3</div> -->
                             </a>
-                            <div class="cart-dropdown">
-                                <div class="cart-list">
-                                    <div class="product-widget">
-                                        <div class="product-img">
-                                            <img src="./img/product01.png" alt="">
-                                        </div>
-                                        <div class="product-body">
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
-                                        </div>
-                                        <button class="delete"><i class="fa fa-close"></i></button>
-                                    </div>
-                                    <div class="product-widget">
-                                        <div class="product-img">
-                                            <img src="./img/product02.png" alt="">
-                                        </div>
-                                        <div class="product-body">
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
-                                        </div>
-                                        <button class="delete"><i class="fa fa-close"></i></button>
-                                    </div>
-                                </div>
-                                <div class="cart-summary">
-                                    <small>3 Item(s) selected</small>
-                                    <h5>SUBTOTAL: $2940.00</h5>
-                                </div>
-                                <div class="cart-btns">
-                                    <a href="#">View Cart</a>
-                                    <a href="#">Checkout <i class="fa fa-arrow-circle-right"></i></a>
-                                </div>
-                            </div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">AB</a></li>
+                                <li><a class="dropdown-item" href="#">FR</a></li>
+                            </ul>
                         </div>
-                        <!-- /Cart -->
                         <!-- Menu Toogle -->
                         <div class="menu-toggle">
                             <a href="#">
@@ -95,11 +62,9 @@
                                 <span>Menu</span>
                             </a>
                         </div>
-                        <!-- /Menu Toogle -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /MAIN HEADER -->
 </header>
