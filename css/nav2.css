@@ -14,31 +14,45 @@ Main nav
 
 .main-nav>li>a {
     padding: 20px 0px;
-    color: rgb(80, 77, 77);
+    color: rgb(0, 0, 0);
 }
 
-.main-nav>li>a:hover,
-.main-nav>li>a:focus,
+.main-nav>li>a:hover {
+    color: #ffc451;
+    background-color: transparent;
+}
+
+.main-nav>li>a:focus {
+    color: #ffc451;
+    background-color: transparent;
+}
+
 .main-nav>li>a.active {
     color: #ffc451;
     background-color: transparent;
 }
 
-.main-nav>li>a:after {
+.main-nav>li>.under:after {
     content: "";
-    display: block;
     width: 0%;
     height: 2px;
+    display: block;
     background-color: #ffc451;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
 }
 
-.main-nav>li>a:hover:after,
-.main-nav>li>a:focus:after,
-.main-nav>li>a.active:after {
+.main-nav>li>.under:hover:after {
     width: 100%;
 }
+
+.main-nav>li>.under:focus:after {
+    width: 100%;
+}
+
+/* .main-nav>li>.under.active:after {
+    width: 100%;
+} */
 
 .header-ctn li.nav-toggle {
     display: none;
@@ -53,7 +67,7 @@ Main nav
 } */
 
 /*----------------------------*\
-    responsive nav
+responsive nav
 \*----------------------------*/
 
 @media only screen and (max-width: 991px) {
@@ -106,73 +120,9 @@ Main nav
     }
 }
 
-/*=========================================================
-    13 -> RESPONSIVE
-===========================================================*/
-
-/* @media only screen and (max-width: 1201px) {}
-
-@media only screen and (max-width: 991px) {
-    #top-header .header-links.pull-left {
-        float: none !important;
-    }
-
-    #top-header .header-links.pull-right {
-        float: none !important;
-        margin-top: 5px;
-    }
-
-    .header-logo {
-        float: none;
-        text-align: center;
-    }
-
-    .header-logo .logo {
-        display: inline-block;
-    }
-
-    #product-imgs {
-        margin-bottom: 60px;
-        margin-top: 15px;
-    }
-
-    #rating {
-        text-align: center;
-    }
-
-    #reviews {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .section-title .section-nav {
-        float: none;
-        margin-top: 10px;
-    }
-
-    .section-tab-nav li {
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    [class*='col-xs'] {
-        width: 100%;
-    }
-
-    .store-grid {
-        float: none;
-        margin-top: 10px;
-    }
-
-    .store-pagination {
-        float: none;
-        margin-top: 10px;
-    }
-} */
-/* Megamenu */
+/*----------------------------*\
+Megamenu 
+\*----------------------------*/
 .dropdown-mega .dropdown-menu {
     width: 100%;
 }
@@ -192,5 +142,5 @@ Main nav
 }
 
 .list-group-item:hover {
-    color: #008489;
+    color: #ffc451;
 }
