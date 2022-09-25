@@ -2,69 +2,133 @@
     <!-- TOP HEADER -->
     <div id="top-header">
         <div class="container">
-            <ul class="header-links float-start">
-                <li><a href="#"><i class="fa-regular fa-circle-question"></i>Help/FAQ</a></li>
+            <ul class="header-links float-start ps-0">
+                <li><a href="#"><i class="fa-solid fa-user"></i> My Account</a></li>
                 <!-- <li><a href="#"><i class="fa-solid fa-envelope"></i>Call us</a></li> -->
                 <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
                 <li><a href="#"><i class="fa-solid fa-globe"></i> EN</a></li>
-                <li><a href="#"><i class="fa-solid fa-user"></i> My Account</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i>Help/FAQ</a></li>
             </ul>
         </div>
     </div>
     <!-- MAIN HEADER -->
-    <div id="header">
-        <div class="container">
-            <div class="row">
-                <!-- LOGO -->
-                <div class="col-md-3">
-                    <div class="header-logo">
-                        <a href="#" class="logo">
-                                <h1 class="text-white">Ernaza<span>.</span></h1>
-                        </a>
+    <div class="first">
+        <nav class="navbar navbar-dark  navbar-expand-lg navColor">
+            <div class="container">
+                <a class="navbar-brand " href="#">
+                    <h1>Ernaza<span>.</span></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Ernaza</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-                </div>
-                <!-- SEARCH BAR -->
-                <div class="col-md-6 d-none d-lg-block">
-                    <div class="container-fluid">
-                        <form class="d-flex" role="search">
+                    <div class="offcanvas-body">
+                        <form class="d-flex mx-lg-auto search-form" role="search">
                             <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button class="btn btn-success search-btn" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </form>
+                        <ul class="navbar-nav justify-content-end pe-3 post">
+                            <div class="header-ctn">
+                                <div>
+                                    <a href="#">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Post a free add</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                        <span>Location</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Jeddah</a></li>
+                                        <li><a class="dropdown-item" href="#">Riyadh</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                        <hr class="d-lg-none text-dark-50">
+                    <!-- main links -->
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 flex-row flex-wrap bd-navbar-nav d-lg-none">
+                        <li class="nav-item col-6 col-lg-auto d-lg-none">
+                            <a class="nav-link active " aria-current="page" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto d-lg-none">
+                            <a class="nav-link" href="#">Steps</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto d-lg-none">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item col-6 col-lg-auto">
+                            <a class="nav-link" aria-current="page" href="#">Hot Deals</a>
+                        </li>
+                    </ul>
+                        <hr class="d-lg-none text-dark-50">
+                        <!-- social  -->
+                        <ul class="navbar-nav flex-row flex-wrap ms-md-auto d-lg-none">
+                            <li class="nav-item col-6 col-lg-auto">
+                                <a class="nav-link py-2 px-0 px-lg-2" href="">
+                                    <small class="d-lg-none ms-2">Instagram</small>
+                                </a>
+                            </li>
+                            <li class="nav-item col-6 col-lg-auto">
+                                <a class="nav-link py-2 px-0 px-lg-2" href="">
+                                    <small class="d-lg-none ms-2">Twitter</small>
+                                </a>
+                            </li>
+                            <li class="nav-item col-6 col-lg-auto">
+                                <a class="nav-link py-2 px-0 px-lg-2" href="">
+                                    <small class="d-lg-none ms-2">Settings</small>
+                                </a>
+                            </li>
+                            <li class="nav-item col-6 col-lg-auto">
+                                <a class="nav-link py-2 px-0 px-lg-2" href="">
+                                    <small class="d-lg-none ms-2">Help</small>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <!-- ACCOUNT -->
-                <div class="col-md-3 clearfix d-none d-lg-block">
-                    <div class="header-ctn">
-                        <!-- POST AN ADD  -->
-                        <div>
-                            <a href="#">
-                                <i class="fa-solid fa-plus"></i>
-                                <span>Post a free add</span>
-                            </a>
-                        </div>
-                        <!-- LOCATION -->
-                        <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                                <i class="fa-sharp fa-solid fa-location-dot"></i>
-                                <span>Location</span>
-                                <!-- <div class="qty">3</div> -->
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Jeddah</a></li>
-                                <li><a class="dropdown-item" href="#">Riyadh</a></li>
-                            </ul>
-                        </div>
-                        <!-- Menu Toogle -->
-                        <div class="menu-toggle">
-                            <a href="#">
-                                <i class="fa fa-bars"></i>
-                                <span>Menu</span>
-                            </a>
-                        </div>
-                    </div>
+                    <!-- <div class="offcanvas-body">
+                        <form class="d-flex mx-lg-auto search-form" role="search">
+                            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success search-btn" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                        <ul class="navbar-nav justify-content-end pe-3">
+                            <div class="header-ctn">
+                                <div>
+                                    <a href="#">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <span>Post a free add</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                        <span>Location</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Jeddah</a></li>
+                                        <li><a class="dropdown-item" href="#">Riyadh</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
 </header>

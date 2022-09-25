@@ -1,6 +1,7 @@
 /*----------------------------*\
 Top header
 \*----------------------------*/
+
 #top-header {
     padding-top: 10px;
     padding-bottom: 30px;
@@ -8,7 +9,7 @@ Top header
 }
 
 .header-links li {
-    display: inline-block;
+    float: left;
     margin-right: 15px;
     font-size: 12px;
 }
@@ -26,37 +27,28 @@ Top header
     margin-right: 5px;
 }
 
+
 /*----------------------------*\
 Main header
 \*----------------------------*/
 
-#header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.first,
+.navColor {
+    padding-top: 5px;
     background-color: #15161D;
 }
 
 /*----------------------------*\
 Logo
 \*----------------------------*/
-
-.header-logo {
-    float: left;
-}
-
-.header-logo .logo img {
-    display: block;
-}
-
-.logo span {
+.navbar-brand span {
     color: #ffc451;
 }
+
 /*----------------------------*\
 Search
 \*----------------------------*/
-
 .search-btn {
-    height: 40px;
     width: 100px;
     background: #ffc451;
     color: #FFF;
@@ -68,23 +60,24 @@ Search
 .search-btn:hover {
     background-color: #FFF;
     border-bottom: 6px solid #ffc451;
-}
-
-form {
-    padding: 15px 0px;
+    color: black;
 }
 
 .search-input {
     border-radius: 40px 0px 0px 40px;
 }
 
+@media (min-width: 992px) {
+    .search-form {
+        width: 500px;
+    }
+}
+
 /*----------------------------*\
 Location
 \*----------------------------*/
-
 .header-ctn {
     float: right;
-    padding: 15px 0px;
 }
 
 .header-ctn>div {
@@ -96,22 +89,28 @@ Location
 }
 
 .header-ctn>div>a {
-    display: block;
     position: relative;
     width: 90px;
     text-align: center;
     color: #FFF;
 }
 
+.header-ctn>div>a:hover {
+    color: #ffc451;
+}
+
 .header-ctn>div>a>i {
     display: block;
     font-size: 18px;
+    color: #ffc451;
 }
 
 .header-ctn>div>a>span {
     font-size: 12px;
 }
 
-.header-ctn .menu-toggle {
-    display: none;
+@media (max-width: 991.98px) {
+    .post {
+        display: none;
+    }
 }
