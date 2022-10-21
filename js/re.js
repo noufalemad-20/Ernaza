@@ -3,6 +3,7 @@
         items: 3,
         margin: 0,
         nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         responsiveClass: true,
         responsive: {
             0: {
